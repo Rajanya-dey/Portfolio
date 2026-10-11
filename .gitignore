@@ -1,0 +1,13 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+*.lock
+bun.lock*
+.env*
+!.env.example
+.env
+.env.local
+.env.*.local

@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    overflow-x: clip;
+    width: 100%;
+  }
+
+  body {
+    overflow-x: clip;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Dark mode baseline: deep obsidian with vibrant accents */
+  html.dark body {
+    background-color: #080c14;
+    color: #f1f5f9;
+  }
+
+  /* Light mode baseline: pristine modern crisp canvas with rich dark slate typography */
+  html:not(.dark) body {
+    background-color: #f8fafc;
+    color: #090d16;
+  }
+
+  code, pre, kbd {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom non-arrow cursor styles */
+@media (pointer: fine) {
+  /* Default custom cyber reticle fallback before or alongside React follower */
+  html.dark {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='3' fill='%2310b981'/%3E%3Ccircle cx='12' cy='12' r='7' stroke='%2310b981' stroke-width='1.5' fill='none' opacity='0.7'/%3E%3Cpath d='M12 2v3M12 19v3M2 12h3M19 12h3' stroke='%2310b981' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") 12 12, auto;
+  }
+
+  html:not(.dark) {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='3' fill='%23059669'/%3E%3Ccircle cx='12' cy='12' r='7' stroke='%23059669' stroke-width='1.5' fill='none' opacity='0.8'/%3E%3Cpath d='M12 2v3M12 19v3M2 12h3M19 12h3' stroke='%23059669' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") 12 12, auto;
+  }
+
+  /* When interactive CustomCursor canvas/component is active, suppress OS cursor for seamless fluid follower */
+  body.custom-cursor-active,
+  body.custom-cursor-active * {
+    cursor: none !important;
+  }
+}
+
+/* Custom high-contrast scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #080c14;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #233148;
+  border-radius: 4px;
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #334968;
+}
+
+html:not(.dark) ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+
