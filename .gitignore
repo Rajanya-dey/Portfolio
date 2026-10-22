@@ -7,7 +7,6 @@ coverage/
 *.lock
 bun.lock*
 .env*
-!.env.example
-.env
+!.env
 .env.local
 .env.*.local
