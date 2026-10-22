@@ -1,4 +1,11 @@
 import { Project, Skill } from '../types';
+import avatarImg from '../assets/images/rajanya_dey_avatar_1791638287931.jpg';
+import ayurvedicImg from '../assets/images/ayurvedic_plants_ss_1791651487674.jpg';
+import kingsukhImg from '../assets/images/kingsukh_hotel_ss_1791651499318.jpg';
+import aqiNexusImg from '../assets/images/aqi_nexus_ss_1791651511067.jpg';
+import geoquestImg from '../assets/images/geoquest_game_ss_1791651522718.jpg';
+import infyntrekImg from '../assets/images/infyntrek_mern_ss_1791651537048.jpg';
+import frontendCanvasImg from '../assets/images/project_frontend_canvas_1791020689818.jpg';
 
 export const DEVELOPER_PROFILE = {
   name: 'Rajanya Dey',
@@ -14,7 +21,7 @@ export const DEVELOPER_PROFILE = {
   college: 'Meghnad Saha Institute of Technology (MSIT), Kolkata',
   degree: 'B.Tech in Computer Science & Engineering (3rd Year)',
   bio: 'Web Developer and Software Developer Intern with hands-on experience in full-stack web development, MERN stack technologies, and AI fundamentals. Experienced in building interactive and responsive web applications using JavaScript, React.js, Node.js, and MongoDB. Contributed to API development, debugging, and feature implementation across hackathons, internships, and developer communities.',
-  avatarUrl: '/src/assets/images/rajanya_dey_avatar_1791638287931.jpg',
+  avatarUrl: avatarImg,
   quickFacts: [
     { label: 'Academic Track', value: '3rd Year B.Tech CSE · MSIT Kolkata' },
     { label: 'Hackathon Award', value: 'Internal SIH 2024 Finalist' },
@@ -50,7 +57,7 @@ export const PROJECTS_DATA: Project[] = [
     tagline: 'Internal SIH 2024 Finalist — Medicinal plant identification & wellness guide',
     description: 'An AI-powered botanical exploration and herbal remedies web application developed for Smart India Hackathon 2024. Catalogs 150+ Ayurvedic plants with therapeutic usage, scientific taxonomies, and interactive search.',
     category: 'fullstack',
-    image: '/src/assets/images/ayurvedic_plants_ss_1791651487674.jpg',
+    image: ayurvedicImg,
     featured: true,
     metrics: [
       { label: 'Internal SIH', value: 'Finalist' },
@@ -75,7 +82,7 @@ export const PROJECTS_DATA: Project[] = [
     tagline: 'GitHub Repository & InnoByte Internship — Room booking, amenities & reservation portal',
     description: 'End-to-end guest house management website built for serene stays in Purulia. Streamlines room booking workflows, guest registration records, room availability grids, and invoice calculations with a responsive modern UI.',
     category: 'backend',
-    image: '/src/assets/images/kingsukh_hotel_ss_1791651499318.jpg',
+    image: kingsukhImg,
     featured: true,
     metrics: [
       { label: 'Booking Flow', value: '3-Step Checkout' },
@@ -100,7 +107,7 @@ export const PROJECTS_DATA: Project[] = [
     tagline: 'TypeScript Analytics Platform — Real-time Air Quality Index, PM2.5 monitoring & sensor telemetry',
     description: 'Interactive environmental data platform monitoring real-time Air Quality Index (AQI), PM2.5, PM10, and atmospheric telemetry. Features responsive pollution trend graphs, live sensor mapping, and health advisory recommendations.',
     category: 'fullstack',
-    image: '/src/assets/images/aqi_nexus_ss_1791651511067.jpg',
+    image: aqiNexusImg,
     featured: true,
     metrics: [
       { label: 'AQI Refresh', value: 'Real-Time' },
@@ -125,7 +132,7 @@ export const PROJECTS_DATA: Project[] = [
     tagline: 'Gamified World Geography Trivia, continent discovery & interactive quiz game',
     description: 'Engaging interactive web application challenging users on world geography, country flags, capitals, and landmarks. Built with dynamic map interaction, country discovery cards, and real-time score counters.',
     category: 'frontend',
-    image: '/src/assets/images/geoquest_game_ss_1791651522718.jpg',
+    image: geoquestImg,
     featured: true,
     metrics: [
       { label: 'Countries Covered', value: '195 Nations' },
@@ -150,7 +157,7 @@ export const PROJECTS_DATA: Project[] = [
     tagline: 'Software Developer Internship — Production MERN web application with RESTful APIs',
     description: 'Developed and maintained full-stack web applications during internship at Infyntrek Systèmes using MongoDB, React.js, and Node.js. Built REST APIs, optimized database queries, and implemented features in an agile team.',
     category: 'fullstack',
-    image: '/src/assets/images/infyntrek_mern_ss_1791651537048.jpg',
+    image: infyntrekImg,
     featured: false,
     metrics: [
       { label: 'API Uptime', value: '99.9%' },
@@ -175,7 +182,7 @@ export const PROJECTS_DATA: Project[] = [
     tagline: 'Google Developer Group on Campus — UI/UX design assets, tokens, and event showcases',
     description: 'Official digital assets, event posters, and website interfaces created for Google Developer Group on Campus (GDGC) MSIT using Canva, Figma, and modern UI/UX design principles.',
     category: 'frontend',
-    image: '/src/assets/images/project_frontend_canvas_1791020689818.jpg',
+    image: frontendCanvasImg,
     featured: false,
     metrics: [
       { label: 'Design Assets', value: '50+ Graphics' },
